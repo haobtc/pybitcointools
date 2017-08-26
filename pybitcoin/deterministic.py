@@ -1,4 +1,4 @@
-from bitcoin.main import *
+from pybitcoin.main import *
 import hmac
 import hashlib
 from binascii import hexlify

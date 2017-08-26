@@ -3,8 +3,8 @@ import os
 import random
 import unittest
 
-import bitcoin.ripemd as ripemd
-from bitcoin import *
+import pybitcoin.ripemd as ripemd
+from pybitcoin import *
 
 
 class TestECCArithmetic(unittest.TestCase):
@@ -184,7 +184,7 @@ class TestTransaction(unittest.TestCase):
         tx2 = apply_multisignatures(tx1, 0, mscript, [sig1, sig3])
         print("Outputting transaction: ", tx2)
 
-    # https://github.com/vbuterin/pybitcointools/issues/71
+    # https://github.com/vbuterin/pypybitcointools/issues/71
     def test_multisig(self):
         script = mk_multisig_script(["0254236f7d1124fc07600ad3eec5ac47393bf963fbf0608bcce255e685580d16d9",
                                      "03560cad89031c412ad8619398bd43b3d673cb5bdcdac1afc46449382c6a8e0b2b"],

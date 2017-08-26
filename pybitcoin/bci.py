@@ -3,7 +3,7 @@ import json, re
 import random
 import sys
 
-from bitcoin.main import from_string_to_bytes
+from pybitcoin.main import from_string_to_bytes
 
 
 try:
@@ -385,8 +385,8 @@ def helloblock_fetchtx(txhash, network='btc'):
             "value": outp["value"],
             "script": outp["scriptPubKey"]
         })
-    from bitcoin.transaction import serialize
-    from bitcoin.transaction import txhash as TXHASH
+    from pybitcoin.transaction import serialize
+    from pybitcoin.transaction import txhash as TXHASH
     tx = serialize(o)
     assert TXHASH(tx) == txhash
     return tx

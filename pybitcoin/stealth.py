@@ -1,5 +1,5 @@
-import bitcoin.main as main
-import bitcoin.transaction as tx
+import pybitcoin.main as main
+import pybitcoin.transaction as tx
 
 # Shared secrets and uncovering pay keys
 
